@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+strawberry-graphql[fastapi]
+sqlalchemy
+faiss-cpu
+sentence-transformers
+scikit-learn
+pandas
+numpy
+joblib
+aiofiles
