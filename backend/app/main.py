@@ -48,8 +48,8 @@ warnings.filterwarnings("ignore")
 # ── Paths ─────────────────────────────────────────────────────────
 BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT_DIR   = os.path.dirname(BASE_DIR)
-MODELS_DIR = os.path.join(ROOT_DIR, "models")
-DATASET_DIR = os.path.join(ROOT_DIR, "dataset")
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+DATASET_DIR = os.path.join(BASE_DIR, "dataset")
 
 # ── App Setup ─────────────────────────────────────────────────────
 app = FastAPI(
