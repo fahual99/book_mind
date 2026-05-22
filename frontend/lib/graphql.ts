@@ -3,7 +3,7 @@
  * Avoids Apollo Client / React version conflicts with Turbopack.
  */
 
-const GRAPHQL_URL = "/graphql";
+const GRAPHQL_URL = "https://bookmind-production-8c7f.up.railway.app/graphql";
 
 export async function gqlQuery<T = Record<string, unknown>>(
   query: string,
