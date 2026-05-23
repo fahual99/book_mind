@@ -132,7 +132,7 @@ function DiscoverPage() {
           <span className="gradient-text">Favorite Book</span>
         </h1>
         <p className="text-[var(--color-text-secondary)] text-lg max-w-2xl mx-auto mb-8">
-          Powered by FAISS Vector Search &amp; Hybrid Recommendation — an AI that understands what you love to read.
+          Powered by FAISS Vector Search &amp; Hybrid Recommendation, an AI that understands what you love to read.
         </p>
 
         {/* Search */}
@@ -247,11 +247,10 @@ function DiscoverPage() {
                       <button
                         key={page}
                         onClick={() => setBrowsePage(page)}
-                        className={`px-4 py-2 rounded-lg text-sm border transition-all ${
-                          page === browsePage
+                        className={`px-4 py-2 rounded-lg text-sm border transition-all ${page === browsePage
                             ? "bg-[var(--color-accent-1)] border-[var(--color-accent-1)] text-white"
                             : "bg-[var(--color-bg-card)] border-[var(--color-border)] hover:bg-white/5"
-                        }`}
+                          }`}
                       >
                         {page}
                       </button>

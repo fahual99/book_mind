@@ -75,7 +75,7 @@ export default function FavoritesPage() {
         <h1 className="text-3xl sm:text-4xl font-bold mb-2">
           Your <span className="gradient-text">Favorites</span>
         </h1>
-        <p className="text-[var(--color-text-secondary)]">Books you love — your AI recommendations are built from these</p>
+        <p className="text-[var(--color-text-secondary)]">Books you love, your AI recommendations are built from these</p>
       </div>
 
       {loadingFavs ? (
