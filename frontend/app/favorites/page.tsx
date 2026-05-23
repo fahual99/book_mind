@@ -60,7 +60,7 @@ export default function FavoritesPage() {
     );
   }
 
-  const favorites = favData?.userFavorites || [];
+  const favorites = (favData?.userFavorites || []).filter((book) => favoriteIds.includes(book.bookId));
   const recommendations = recsData?.userRecommendations;
 
   return (
