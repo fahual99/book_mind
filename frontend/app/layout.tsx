@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "BookMind AI — Intelligent Book Recommendations",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <Navbar />
           <main className="relative z-10 min-h-screen">{children}</main>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
