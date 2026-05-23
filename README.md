@@ -2,6 +2,9 @@
 
 A full-stack, AI-powered book recommendation web application featuring a **hybrid recommendation engine** that combines content-based filtering (FAISS + TF-IDF + numerical features) with user-based collaborative filtering. The system serves recommendations through a **GraphQL API** and presents them via a modern **Next.js** dark-themed UI.
 
+
+Preview:  https://book-mind-five.vercel.app
+
 ---
 
 ## 🏗️ Tech Stack
@@ -72,6 +75,8 @@ book_webapp/
 │           ├── hybrid.py           # Dynamic weight blending + quality/diversity filtering
 │           ├── diversity.py        # Author/genre diversity caps
 │           └── embeddings.py       # Embedding utility service
+|       └── models/                         # Pre-trained ML artifacts (*.npy, *.pkl, *.index)
+|       └── dataset/                        # Source data (books_enriched.csv, ratings.csv)
 ├── frontend/
 │   ├── package.json                # Node.js dependencies
 │   ├── next.config.ts              # Next.js config (rewrites, image domains)
@@ -97,9 +102,6 @@ book_webapp/
 │   └── lib/
 │       ├── graphql.ts              # Lightweight fetch-based GraphQL client
 │       └── hooks.ts                # Custom React hooks (useQuery, useMutation)
-├── models/                         # Pre-trained ML artifacts (*.npy, *.pkl, *.index)
-├── dataset/                        # Source data (books_enriched.csv, ratings.csv)
-├── notebooks/                      # Jupyter notebook (training & experimentation)
 ├── book_recommender.db             # SQLite database (auto-created)
 └── README.md
 ```
@@ -119,7 +121,7 @@ book_webapp/
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/fahual99/book_mind.git
 cd book_webapp
 ```
 
